@@ -13,6 +13,7 @@
 body {
   font-family: "Fira Sans", sans-serif;
   background-color: #fef8f8;
+  font-size: 15px;
 }
 /* .bg-fade::before {
     content: "";
@@ -101,6 +102,7 @@ body {
   list-style-type: none;
   justify-content: center;
 }
+
 
 .card {
   cursor: default;
