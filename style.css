@@ -8,6 +8,12 @@
   --height: 560px;
 }
 
+@media only screen and (max-width: 600px) {
+  :root {
+    --width: 350px;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   min-height: 100vh;
   font-size: 15px;
   background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
@@ -44,7 +50,7 @@ body {
 }
 
 .teams {
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem 2rem;
   display: flex;
   flex-direction: row;
   gap: 50px;
@@ -127,6 +133,7 @@ body {
 }
 
 .card_description {
+  margin: 0 auto;
   position: relative;
   bottom: -50px;
   font-size: 15px;
@@ -137,6 +144,8 @@ body {
   height: 80px;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 30px;
+  max-width: 80%;
 }
 
 .card:hover .card_overlay {
